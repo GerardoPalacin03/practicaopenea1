@@ -24,5 +24,19 @@
     "category": "Category",
     "delivered-products": "Delivered Products",
     "no-delivered": "No Delivered"
+  },
+  "delivery": {
+    "title": "Product Delivery",
+    "form-title": "Record the delivery of products to client",
+    "order-identifier": "Order Identifier",
+    "product-identifier": "Product Identifier",
+    "deliver-product": "Deliver Product",
+    "required": "Order Identifier is required",
+    "required-product": "Enter a valid Product Identifier",
+    "result": {
+      "delivered": "Order successfully delivered",
+      "invalid-order": "Invalid Order Identifier",
+      "not-shipped": "You can only deliver shipped products"
+    }
   }
 }

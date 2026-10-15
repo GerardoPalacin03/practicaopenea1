@@ -13,7 +13,9 @@
   <mat-grid-list cols="2" rowHeight="260px" gutterSize="16px">
     @for (product of store.products(); track product.id) {
       <mat-grid-tile>
-        <app-product-summary [product]="product" />
+        <app-product-summary
+          [product]="product"
+          [deliveredClients]="lastMileStore.deliveredClientsByProduct().get(product.id) ?? 0" />
       </mat-grid-tile>
     }
   </mat-grid-list>

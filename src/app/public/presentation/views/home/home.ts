@@ -3,6 +3,7 @@ import { MatGridListModule } from '@angular/material/grid-list';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { TranslatePipe } from '@ngx-translate/core';
 import { CargoStore } from '../../../../cargo/application/cargo.store';
+import { LastMileStore } from '../../../../last-mile/application/last-mile.store';
 import { ProductSummary } from '../../../../cargo/presentation/components/product-summary/product-summary';
 
 /**
@@ -20,5 +21,9 @@ import { ProductSummary } from '../../../../cargo/presentation/components/produc
 export class Home {
   /** Store with the products shown in the grid. */
   protected readonly store = inject(CargoStore);
+
+  /** Store with the deliveries used to count the clients that received each product. */
+  protected readonly lastMileStore = inject(LastMileStore);
 }
+
 
