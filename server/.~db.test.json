@@ -1,0 +1,138 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Express Parcel Box",
+      "description": "Reinforced box for same-day parcel delivery.",
+      "price": 12.5,
+      "category": "Packaging",
+      "stock": 120
+    },
+    {
+      "id": 2,
+      "name": "Cold Chain Bag",
+      "description": "Insulated bag that keeps food fresh during transport.",
+      "price": 24.9,
+      "category": "Cold Chain",
+      "stock": 60
+    },
+    {
+      "id": 3,
+      "name": "Fragile Shield Kit",
+      "description": "Protective kit for fragile items with foam and tape.",
+      "price": 18,
+      "category": "Protection",
+      "stock": 85
+    },
+    {
+      "id": 4,
+      "name": "Smart Locker Slot",
+      "description": "Monthly access to a smart pickup locker.",
+      "price": 35,
+      "category": "Services",
+      "stock": 30
+    },
+    {
+      "id": 5,
+      "name": "Courier Backpack",
+      "description": "Waterproof backpack for last-mile couriers.",
+      "price": 59.9,
+      "category": "Equipment",
+      "stock": 15
+    },
+    {
+      "id": 6,
+      "name": "Tracking Tag",
+      "description": "Rechargeable GPS tag for high-value shipments.",
+      "price": 42,
+      "category": "Tracking",
+      "stock": 0
+    }
+  ],
+  "clients": [
+    {
+      "id": 1,
+      "name": "Lucía Ramos",
+      "email": "lucia.ramos@example.com",
+      "phone": "+51 987 111 222",
+      "address": "Av. Larco 345, Miraflores, Lima"
+    },
+    {
+      "id": 2,
+      "name": "Carlos Medina",
+      "email": "carlos.medina@example.com",
+      "phone": "+51 987 333 444",
+      "address": "Jr. Junín 120, Cercado de Lima"
+    },
+    {
+      "id": 3,
+      "name": "Andrea Torres",
+      "email": "andrea.torres@example.com",
+      "phone": "+51 987 555 666",
+      "address": "Calle Los Pinos 78, San Isidro, Lima"
+    },
+    {
+      "id": 4,
+      "name": "Diego Salas",
+      "email": "diego.salas@example.com",
+      "phone": "+51 987 777 888",
+      "address": "Av. Arequipa 2010, Lince, Lima"
+    }
+  ],
+  "deliveries": [
+    {
+      "id": 1,
+      "orderId": "ORD-1001",
+      "clientId": 1,
+      "productId": 1,
+      "deliveryDate": "2026-10-01",
+      "deliveryAddress": "Av. Larco 345, Miraflores, Lima",
+      "status": "Delivered"
+    },
+    {
+      "id": 2,
+      "orderId": "ORD-1002",
+      "clientId": 2,
+      "productId": 1,
+      "deliveryDate": "2026-10-02",
+      "deliveryAddress": "Jr. Junín 120, Cercado de Lima",
+      "status": "Delivered"
+    },
+    {
+      "id": 3,
+      "orderId": "ORD-1003",
+      "clientId": 3,
+      "productId": 2,
+      "deliveryDate": "2026-10-03",
+      "deliveryAddress": "Calle Los Pinos 78, San Isidro, Lima",
+      "status": "Delivered"
+    },
+    {
+      "id": 4,
+      "orderId": "ORD-1004",
+      "clientId": 1,
+      "productId": 3,
+      "deliveryDate": "2026-10-10",
+      "deliveryAddress": "Av. Larco 345, Miraflores, Lima",
+      "status": "Delivered"
+    },
+    {
+      "id": 5,
+      "orderId": "ORD-1005",
+      "clientId": 4,
+      "productId": 4,
+      "deliveryDate": "2026-10-12",
+      "deliveryAddress": "Av. Arequipa 2010, Lince, Lima",
+      "status": "Pending"
+    },
+    {
+      "id": 6,
+      "orderId": "ORD-1006",
+      "clientId": 2,
+      "productId": 5,
+      "deliveryDate": "2026-10-14",
+      "deliveryAddress": "Jr. Junín 120, Cercado de Lima",
+      "status": "Shipped"
+    }
+  ]
+}
