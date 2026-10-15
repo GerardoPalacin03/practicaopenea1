@@ -8,5 +8,15 @@
   "option": {
     "home": "Home",
     "delivery": "Delivery"
+  },
+  "home": {
+    "title": "Home",
+    "content": "Welcome to Chasky",
+    "sold-products": "Sold products"
+  },
+  "page-not-found": {
+    "title": "Page not found",
+    "content": "The route {{invalid_path}} was not found.",
+    "go-home": "Back to Home"
   }
 }
