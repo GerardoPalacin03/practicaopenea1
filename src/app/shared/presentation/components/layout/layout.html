@@ -1,0 +1,21 @@
+<mat-toolbar>
+  <mat-toolbar-row class="toolbar-row">
+    <div class="toolbar-brand">
+      <app-brand-logo />
+      <span class="toolbar-title">{{ 'toolbar.title' | translate }}</span>
+    </div>
+    <nav class="toolbar-navigation" [attr.aria-label]="'toolbar.navigation' | translate">
+      @for (option of options; track option.link) {
+        <a mat-button [routerLink]="option.link" routerLinkActive="active" ariaCurrentWhenActive="page">
+          {{ option.label | translate }}
+        </a>
+      }
+    </nav>
+    <div class="toolbar-language">
+      <app-language-switcher />
+    </div>
+  </mat-toolbar-row>
+</mat-toolbar>
+<main id="main-content" class="content" tabindex="-1">
+  <router-outlet />
+</main>

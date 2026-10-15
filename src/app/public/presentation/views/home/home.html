@@ -1,0 +1,22 @@
+<section class="home" aria-labelledby="home-title">
+  <h1 id="home-title">{{ 'home.title' | translate }}</h1>
+  <p>{{ 'home.content' | translate }}</p>
+</section>
+<section class="sold-products" aria-labelledby="sold-products-title">
+  <h2 id="sold-products-title">{{ 'home.sold-products' | translate }}</h2>
+  @if (store.loading()) {
+    <mat-spinner diameter="40" [attr.aria-label]="'home.loading' | translate"></mat-spinner>
+  }
+  @if (store.error()) {
+    <p role="alert">{{ store.error() }}</p>
+  }
+  <mat-grid-list cols="2" rowHeight="260px" gutterSize="16px">
+    @for (product of store.products(); track product.id) {
+      <mat-grid-tile>
+        <app-product-summary
+          [product]="product"
+          [deliveredClients]="lastMileStore.deliveredClientsByProduct().get(product.id) ?? 0" />
+      </mat-grid-tile>
+    }
+  </mat-grid-list>
+</section>

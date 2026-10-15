@@ -1,0 +1,39 @@
+<section class="delivery" aria-labelledby="delivery-title">
+  <h1 id="delivery-title">{{ 'delivery.title' | translate }}</h1>
+  <section aria-labelledby="delivery-form-title">
+    <h2 id="delivery-form-title">{{ 'delivery.form-title' | translate }}</h2>
+    <form class="delivery-form" [formGroup]="form" (ngSubmit)="deliverProduct()" novalidate>
+      <mat-form-field appearance="outline">
+        <mat-label>{{ 'delivery.order-identifier' | translate }}</mat-label>
+        <input matInput type="text" formControlName="orderId" autocomplete="off" required>
+        @if (form.controls.orderId.hasError('required')) {
+          <mat-error>{{ 'delivery.required' | translate }}</mat-error>
+        }
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label>{{ 'delivery.product-identifier' | translate }}</mat-label>
+        <input matInput type="number" min="1" formControlName="productId" required>
+        @if (form.controls.productId.invalid) {
+          <mat-error>{{ 'delivery.required-product' | translate }}</mat-error>
+        }
+      </mat-form-field>
+      <button mat-flat-button type="submit">{{ 'delivery.deliver-product' | translate }}</button>
+    </form>
+    <div class="delivery-result" role="status" aria-live="polite">
+      @switch (store.result()) {
+        @case ('delivered') {
+          <p class="success">{{ 'delivery.result.delivered' | translate }}</p>
+        }
+        @case ('invalid-order') {
+          <p class="failure">{{ 'delivery.result.invalid-order' | translate }}</p>
+        }
+        @case ('not-shipped') {
+          <p class="failure">{{ 'delivery.result.not-shipped' | translate }}</p>
+        }
+      }
+      @if (store.error()) {
+        <p class="failure">{{ store.error() }}</p>
+      }
+    </div>
+  </section>
+</section>
