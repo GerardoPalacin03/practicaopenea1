@@ -24,5 +24,19 @@
     "category": "Categoría",
     "delivered-products": "Productos entregados",
     "no-delivered": "Sin entregas"
+  },
+  "delivery": {
+    "title": "Entrega de productos",
+    "form-title": "Registrar la entrega de productos al cliente",
+    "order-identifier": "Identificador de la orden",
+    "product-identifier": "Identificador del producto",
+    "deliver-product": "Entregar producto",
+    "required": "El identificador de la orden es obligatorio",
+    "required-product": "Ingresa un identificador de producto válido",
+    "result": {
+      "delivered": "Orden entregada con éxito",
+      "invalid-order": "Identificador de orden no válido",
+      "not-shipped": "Solo puedes entregar productos enviados"
+    }
   }
 }
