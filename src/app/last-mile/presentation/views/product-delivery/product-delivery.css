@@ -1,0 +1,28 @@
+.delivery {
+  margin: 0 auto;
+  max-width: 720px;
+  padding: 1rem;
+}
+
+.delivery-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: flex-start;
+}
+
+.delivery-form mat-form-field {
+  width: 100%;
+}
+
+.delivery-result {
+  margin-top: 1rem;
+}
+
+.success {
+  color: var(--mat-sys-primary);
+}
+
+.failure {
+  color: var(--mat-sys-error);
+}
