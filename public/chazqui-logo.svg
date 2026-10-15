@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" role="img" aria-label="Logistics Solutions">
+  <rect width="80" height="80" rx="16" fill="#fff3e6"/>
+  <path d="M40 14 62 26v28L40 66 18 54V26z" fill="#f28a1f" stroke="#c4650a" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M18 26 40 38 62 26M40 38v28" fill="none" stroke="#c4650a" stroke-width="3" stroke-linejoin="round"/>
+</svg>
