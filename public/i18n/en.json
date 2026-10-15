@@ -1,0 +1,12 @@
+{
+  "toolbar": {
+    "title": "Logistics Solutions",
+    "navigation": "Main navigation",
+    "logo-alt": "Chazki logo",
+    "language": "Preferred language"
+  },
+  "option": {
+    "home": "Home",
+    "delivery": "Delivery"
+  }
+}
