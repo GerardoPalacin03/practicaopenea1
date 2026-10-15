@@ -36,3 +36,12 @@ body {
   margin: 0;
   height: 100%;
 }
+// Toolbar colors: primary background with matching text, as in the Learning Center.
+:root {
+  @include mat.toolbar-overrides(
+    (
+      container-background-color: var(--mat-sys-primary),
+      container-text-color: var(--mat-sys-on-primary),
+    )
+  );
+}
