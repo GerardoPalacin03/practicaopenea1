@@ -18,5 +18,11 @@
     "title": "Página no encontrada",
     "content": "No se encontró la ruta {{invalid_path}}.",
     "go-home": "Volver a Inicio"
+  },
+  "product-summary": {
+    "price": "Precio",
+    "category": "Categoría",
+    "delivered-products": "Productos entregados",
+    "no-delivered": "Sin entregas"
   }
 }

@@ -18,5 +18,11 @@
     "title": "Page not found",
     "content": "The route {{invalid_path}} was not found.",
     "go-home": "Back to Home"
+  },
+  "product-summary": {
+    "price": "Price",
+    "category": "Category",
+    "delivered-products": "Delivered Products",
+    "no-delivered": "No Delivered"
   }
 }
