@@ -1,0 +1,24 @@
+<mat-card class="product-card" appearance="outlined" [attr.aria-labelledby]="'product-title-' + product().id">
+  <mat-card-header>
+    <mat-card-title [id]="'product-title-' + product().id">{{ product().name }}</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <p>{{ product().description }}</p>
+    <p>
+      <strong>{{ 'product-summary.price' | translate }}:</strong>
+      {{ product().price | currency: 'USD' }}
+    </p>
+    <p>
+      <strong>{{ 'product-summary.category' | translate }}:</strong>
+      {{ product().category }}
+    </p>
+  </mat-card-content>
+  <mat-card-footer class="product-card-footer">
+    <strong>{{ 'product-summary.delivered-products' | translate }}:</strong>
+    @if (deliveredClients() > 0) {
+      {{ deliveredClients() }}
+    } @else {
+      {{ 'product-summary.no-delivered' | translate }}
+    }
+  </mat-card-footer>
+</mat-card>
